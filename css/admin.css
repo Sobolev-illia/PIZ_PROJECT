@@ -1,0 +1,251 @@
+.main-page {
+  background-color: #5a5a5a;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  font-size: 18px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f9f9f9;
+  margin-right: 20px;
+  padding-right: 60px;
+  transition: 0.7s;
+}
+
+.nav-link:hover {
+  color: #fbd804;
+}
+
+.logo {
+  width: 80px;
+}
+
+.logo-holder {
+  padding: 10px 40px 10px 80px;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f9f9f9;
+}
+
+.content-row {
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw-120px;
+}
+
+.content-article {
+  flex-grow: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.preview-link {
+  display: block;
+  text-decoration: none;
+}
+
+.content-preview {
+  width: 300px;
+  height: 170px;
+  background-color: #5a5a5a;
+  color: transparent;
+  transition: 1s;
+  text-align: center;
+  line-height: 170px;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+.content-preview:hover {
+  background-image: linear-gradient(#fbd804, #fbd804) !important;
+  background-size: cover !important;
+  background-color: #fbd804;
+  color: #1e1e1e;
+  cursor: pointer;
+  box-shadow: 0px 0px 25px #fbd804;
+}
+
+#post1 {
+  background-image: url(/img/lesson1.png);
+  background-size: cover;
+}
+#post2 {
+  background-image: url(/img/lesson2.png);
+  background-size: cover;
+}
+#post3 {
+  background-image: url(/img/lesson3.png);
+  background-size: cover;
+}
+#post4 {
+  background-image: url(/img/lesson4.png);
+  background-size: cover;
+}
+#post5 {
+  background-image: url(/img/lesson5.png);
+  background-size: cover;
+}
+
+.post-name {
+  font-size: 20px;
+  font-weight: 300;
+  color: #f9f9f9;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.create-post-button {
+  position: absolute;
+  z-index: 5;
+  top: 85%;
+  left: 92%;
+  width: 60px;
+  border-radius: 30px;
+  height: 60px;
+  font-size: 45px;
+  color: #f9f9f9;
+  background-color: #1e1e1e;
+  border: hidden;
+  text-align: center;
+  vertical-align: middle;
+  transition: 0.7s;
+}
+
+.create-post-button:hover {
+  color: #1e1e1e;
+  background-color: #fbd804;
+  box-shadow: 0px 0px 15px #fbd804;
+}
+
+/*POPUP FORM*/
+.popup {
+  display: none;
+  position: fixed;
+  width: 40vw;
+  height: 50vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1e1e1e;
+  padding: 20px;
+  border: none;
+  box-shadow: 0px 0px 20px#fbd804;
+  z-index: 9999;
+
+  border-radius: 30px;
+}
+
+.popup.show {
+  display: block;
+}
+
+.form-name {
+  font-size: 30px;
+  font-weight: 900;
+  color: #fbd804;
+  text-align: center;
+}
+
+.fields-holder {
+  display: flex;
+  flex-direction: column;
+  color: #f9f9f9;
+}
+
+.fields-holder input {
+  background-color: #5a5a5a;
+  border: none;
+  box-shadow: 0px 0px -5px #1e1e1e;
+  height: 30px;
+  border-radius: 10px;
+  color: #f9f9f9;
+}
+
+input:focus {
+  outline: 1px solid #fbd804;
+  box-shadow: 0 0 10px #fbd804;
+}
+
+::placeholder {
+  color: #c2c1c1;
+}
+
+.fields-holder h5 {
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.buttons-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.btn {
+  padding-left: 20px;
+  height: 40px;
+  margin-top: 60px;
+  text-align: center;
+  background-color: #fbd604b5;
+  border: none;
+  color: #f9f9f9;
+  border-radius: 13px;
+  width: 50%;
+  font-size: 16px;
+  transition: 0.7s;
+}
+
+#backButton {
+  background-color: #5a5a5a;
+  color: #f9f9f9;
+  width: 200px;
+}
+
+#backButton:hover {
+  background-color: #f9f9f9;
+  color: #1e1e1e;
+}
+
+#description {
+  height: 70px;
+  vertical-align: top;
+}
+
+.btn:hover {
+  background-color: #fbd804;
+  box-shadow: 0px 0px 20px #fbd804;
+  color: #1e1e1e;
+}
+
+/*OVERLAY*/
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 9, 0, 0.6);
+  display: none;
+  z-index: 999;
+}

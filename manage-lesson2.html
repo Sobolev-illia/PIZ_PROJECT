@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кібер Воїн</title>
+    <link rel="shortcut icon" href="./img/logo-no-lines.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/manage-lesson.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo-holder">
+        <img class="logo" src="./img/logo.png" alt="Логотип курсу" />
+      </div>
+      <p class="header-title">Управління контентом</p>
+      <nav>
+        <a class="nav-link" href="./admin.html">Назад</a>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- MAIN PAGE -->
+      <h3 class="lesson-name">
+        <span class="lesson-name-span">Урок №2. Віруси. Шкідливе ПЗ</span>
+      </h3>
+      <div class="main-page">
+        <div class="lesson">
+          <div class="video">
+            <iframe
+              class="lesson-record"
+              src="https://www.youtube.com/embed/1o9Rqc1Mc5o?si=TexzY7WVIAzk-Khk"
+              title="Урок №2. Віруси. Шкідливе ПЗ"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; 
+                                    encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+            <div class="leave-coment">
+              <h3 id="title-your-comment" class="comments-title">
+                Your comment
+              </h3>
+              <form class="coment-form">
+                <div class="form-group">
+                  <label class="comment-label" for="name">Prefered Name</label>
+                  <input
+                    id="name-field"
+                    type="text"
+                    name="name"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="comment-label" for="message">Message</label>
+                  <textarea
+                    name="msg"
+                    cols="30"
+                    rows="5"
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <div id="button" class="form-group">
+                  <button type="button" class="btn">Post Comment</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="ready-comments">
+            <h3 class="comments-title">Users comments:</h3>
+            <div class="comment">
+              <div class="head-comment">
+                <div class="user-info">
+                  <img
+                    src="/img/Illia_phhoto.png"
+                    alt="avatar"
+                    class="rounded-circle"
+                  />
+                  <h4 class="user-name">Illia Soboliev</h4>
+                  <span class="date">20 October, 2018</span>
+                </div>
+                <button class="delete-button">Delete</button>
+              </div>
+              <p class="comment-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus numquam assumenda hic aliquam vero sequi velit
+                molestias doloremque molestiae dicta?
+              </p>
+            </div>
+            <div class="comment">
+              <div class="head-comment">
+                <div class="user-info">
+                  <img
+                    src="/img/Mary_photo.png"
+                    alt="avatar"
+                    class="rounded-circle"
+                  />
+                  <h4 class="user-name">Mary Yanbergs</h4>
+                  <span class="date">20 October, 2018</span>
+                </div>
+                <button class="delete-button">Delete</button>
+              </div>
+              <p class="comment-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus numquam assumenda hic aliquam vero sequi velit
+                molestias doloremque molestiae dicta?
+              </p>
+            </div>
+            <div class="comment">
+              <div class="head-comment">
+                <div class="user-info">
+                  <img
+                    src="/img/Illia_phhoto.png"
+                    alt="avatar"
+                    class="rounded-circle"
+                  />
+                  <h4 class="user-name">Illia Soboliev</h4>
+                  <span class="date">20 October, 2018</span>
+                </div>
+                <button class="delete-button">Delete</button>
+              </div>
+              <p class="comment-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus numquam assumenda hic aliquam vero sequi velit
+                molestias doloremque molestiae dicta?
+              </p>
+            </div>
+            <div class="comment">
+              <div class="head-comment">
+                <div class="user-info">
+                  <img
+                    src="/img/Mary_photo.png"
+                    alt="avatar"
+                    class="rounded-circle"
+                  />
+                  <h4 class="user-name">Mary Yanbergs</h4>
+                  <span class="date">20 October, 2018</span>
+                </div>
+                <button class="delete-button">Delete</button>
+              </div>
+              <p class="comment-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusamus numquam assumenda hic aliquam vero sequi velit
+                molestias doloremque molestiae dicta?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="delete-lesson-btn">DELETE THIS LESSON</button>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer-text">
+        All rights are reserved<br />E-mail:
+        <a class="footer-link" href="mailto:cyberwarrior.course@gmail.com"
+          >cyberwarrior.course@gmail.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

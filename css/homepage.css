@@ -1,0 +1,105 @@
+.main-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #5a5a5a;
+  background-image: url("/img/lines.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-holder {
+  padding-left: 80px;
+  width: 65%;
+  padding-right: 20px;
+}
+
+.title {
+  font-size: 100px;
+  color: #fbd804;
+  font-weight: 900;
+  text-shadow: #1e1e1e;
+}
+
+.main-page-photo {
+  width: 400px;
+}
+
+.photo-holder {
+  padding: 100px 120px 100px 120px;
+  justify-content: center;
+}
+
+.header {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav {
+  font-size: 24px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f9f9f9;
+  margin-right: 20px;
+  transition: 0.7s;
+}
+
+.nav-link:hover {
+  color: #fbd804;
+}
+
+.logo {
+  width: 100px;
+}
+
+.logo-holder {
+  padding: 20px 40px 20px 80px;
+}
+
+.course-description {
+  color: #f9f9f9;
+  font-weight: 400;
+  font-size: 30px;
+  width: 630px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.button.container {
+    position: absolute;
+    z-index: 15;
+    top: -50%;
+    left: 50%;
+}
+
+.start-button {
+    position: absolute;
+    z-index: 16;
+    top: 75%;
+    left: -20%;
+    padding: 10px 30px 10px 500px;
+    text-align: center;
+    color: #FFE234;
+    background-color: #1e1e1e;
+    border-radius: 40px;
+    font-size: 30px;
+    border-top: #f9f9f9;
+    border-left: #f9f9f9;
+    border-right: #f9f9f9;
+    border-bottom: #f9f9f9;
+    transition: 0.7s;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.start-button:hover {
+  background-color: #FFE234;
+  color: #1e1e1e;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
